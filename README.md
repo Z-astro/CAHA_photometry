@@ -20,7 +20,7 @@ In this step, we run the aperture photomtery using `photutils` to obtain lightcu
 
 `ca_photutils_py3.py` and `FWHM_measurement.py` demands a modern python environment to make sure `photutils==2.2.0` is available. By Jul 2025, Hao Zhang uses python==3.13.0. What's more, `FWHM_measurement.py` has another version `FWHM_measurement_bkg2D.py`, this version utilizes different background subtraction method. `FWHM_measurement.py`'s background subtraction keeps the same as `ca_photutils_py3.py`. In most cases, we use `FWHM_measurement.py` because using the same method with aperture photometry seems rational. If the evil referees ask you use another version, then you go.
 
-## File Tree Struction
+## File Tree Structure
 All files are located in the folder:`CAHA/`. 
 
 The codes in this repository is in folder:`CAHA/codes/`. 
@@ -29,6 +29,6 @@ Original data is in `CAHA/data/tmp/`.
 
 The individual folder for every source is in `CAHA/objects/obj_{name}`. In every folder, original images after cut are in `CAHA/objects/obj_{name}/images/`. Images after alignment are in `CAHA/objects/obj_{name}/alipy_out/`. Lightcurves and FWHM curves are in  `CAHA/objects/obj_{name}/lightcurve/`. `CAHA/objects/obj_{name}/aper.txt` is the information for background subtraction in aperture photometry. `CAHA/objects/obj_{name}/{name}.pos` is a text file records the comparision stars'position. Note that the target is the last one, the Spec.comp is the last two. Others are photometry comparison. `CAHA/objects/obj_{name}/updatelst` records the progress.
 
-The result folder is `CAHA/lightcurves`. The stage handling results are here. The name structure is: `lightcurve_{date}`.
+The result folder is `CAHA/lightcurves`. The daily handling results are here. The name structure is: `lightcurve_{date}`.
 
 `objradec.lst` is the file contains all the sources' position information. If you want to add new sources, remember to update it.
