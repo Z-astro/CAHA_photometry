@@ -17,6 +17,7 @@ In this step, we run the aperture photomtery using `photutils` to obtain lightcu
 1. `asciidata`: https://github.com/japs/astroasciidata .
 2. `SExtractor`: https://sextractor.readthedocs.io/en/latest/Introduction.html . This is a command-line tool.
 3. `f2n`: https://github.com/zhang-zhixiang/f2n . This package is used for transformation between .fits and .png. This is an original version for python==2.7. So Hao Zhang corrects it to make it compatible in `astroconda`. 'Gemini is God', Hao Zhang said. The package corrected is in the repository.
+4. `pyfits`: https://pypi.org/project/pyfits/3.5/ . Although this package is merged with `astropy`, `alipy` needs it. Install version 3.5.
 
 `ca_photutils_py3.py` and `FWHM_measurement.py` demands a modern python environment to make sure `photutils==2.2.0` is available. By Jul 2025, Hao Zhang uses python==3.13.0. What's more, `FWHM_measurement.py` has another version `FWHM_measurement_bkg2D.py`, this version utilizes different background subtraction method. `FWHM_measurement.py`'s background subtraction keeps the same as `ca_photutils_py3.py`. In most cases, we use `FWHM_measurement.py` because using the same method with aperture photometry seems rational. If the evil referees ask you use another version, then you go.
 
