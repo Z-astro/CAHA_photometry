@@ -1,7 +1,7 @@
 # CAHA_photometry
 The photomtery measurement pipeline for CAHA 2.2m Telescope (CAFOS) Reverberation Mapping Survey.
 
-CAHA (Centro Astronómico Hispano en Andalucía) is located in Calar Alto Observatory in Spain. The SARM group in IHEP uses CAFOS 2.2m Telescope for RM survey. This pipeline is created for photometry of the obseravations.
+CAHA (Centro Astronómico Hispano en Andalucía) is located in Calar Alto Observatory in Spain. The SARM group in IHEP uses CAFOS 2.2m Telescope for RM survey. This pipeline is created for photometry of the obseravations. The framework of this version is produced by Zhu-Heng Yao (2019--2024, PhD).
 
 The first man who governed the CAHA photometry was Zhi-Xiang Zhang, then was Wei-Jian Guo, then was Zhu-Heng Yao. Now it's Hao Zhang. (By Jul 2025)
 
