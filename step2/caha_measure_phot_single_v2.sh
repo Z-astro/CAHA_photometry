@@ -34,7 +34,28 @@ mkdir -p ${lcpath}
 # dirlist=(obj_PG0934+013)
 # echo $dirlist
 # dirname=${dirlist[*]}
-dirname="obj_PG1435-067"
+
+# 引导用户输入源名称
+read -p "请输入源名称（例如 NGC4151）: " name
+
+# 构建目标目录路径
+target_dir="/mnt/WDsata/CAHA/objects/obj_${name}"
+
+# 检查目录是否存在
+if [ ! -d "$target_dir" ]; then
+    echo "错误：目录 $target_dir 不存在！"
+    echo "请检查以下可能原因："
+    echo "1. 源名称输入错误"
+    echo "2. 目标目录未在 /mnt/WDsata/CAHA/objects/ 中创建"
+    exit 1  # 退出脚本并返回错误代码
+fi
+
+# 目录存在则正常赋值
+dirname="obj_${name}"
+echo "已设置目标目录：$dirname"
+
+echo "<<<<<${dirname}>>>>>"
+cd ${dirname}
 
 echo "<<<<<${dirname}>>>>>"
 cd ${dirname}
