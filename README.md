@@ -33,3 +33,18 @@ The individual folder for every source is in `CAHA/objects/obj_{name}`. In every
 The result folder is `CAHA/lightcurves`. The daily handling results are here. The name structure is: `lightcurve_{date}`.
 
 `objradec.lst` is the file contains all the sources' position information. If you want to add new sources, remember to update it.
+
+## ASAS-SN/ZTF lightcurve calibration
+Corresponding folder: `ans-ztf_cali/`. The pipeline is `cali_targets.sh`. Usually we don't have to update once for all. Mr.Hu will tell you some targets are required to be updated. In Yao's version, you must divide the objects into several parts, a group with all ZTF-bands available, a group with only zg&zr bands available...... In this version, the script enters every source's directory to execute the mission, so you just need to give a total objlist in the shell script. If there is no demand, this section will be updated every 6 months.
+
+ASAS-SN lightcurve download: https://asas-sn.osu.edu/
+ZTF lightcurve download: https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-scan?mission=irsa&submit=Select&projshort=ZTF
+
+**Caution! DON'T USE SKY-PATROL API KEY TO DOWNLOAD ASAS-SN DATA! Just download it from the website.**
+
+Tools: PyCALI. https://pycali.readthedocs.io/en/latest/ . Hao Zhang said he still didn't know why this package is so magic. Ask Yan-Rong Li when you meet bugs during the installation.
+
+Please correct the file name to the form like: '{objname}_asas.csv' and '{objname}_zg/zr/zi.csv'. Data file is located in: /mnt/WDsata/asn-ztf/obj _{name}/
+
+
+
