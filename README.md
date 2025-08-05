@@ -3,7 +3,7 @@ The photomtery measurement pipeline for CAHA 2.2m Telescope (CAFOS) Reverberatio
 
 CAHA (Centro Astronómico Hispano en Andalucía) is located in Calar Alto Observatory in Spain. The SARM group in IHEP uses CAFOS 2.2m Telescope for RM survey. This pipeline is created for photometry of the obseravations. The framework of this version is produced by Zhu-Heng Yao (2019--2024, PhD).
 
-The first man who governed the CAHA photometry was Zhi-Xiang Zhang, then was Wei-Jian Guo, then was Zhu-Heng Yao. Now it's Hao Zhang. (By Jul 2025)
+The first man who governed the CAHA photometry was Zhi-Xiang Zhang, then was Wei-Jian Guo, then was Zhu-Heng Yao. Now it's Hao Zhang (PhD from 2022 to present). (By Jul 2025)
 
 The whole pipeline is dividied into 2 parts. Remember install the conda environment `astroconda` (python==3.7.16) which supports the `pyraf` in python3. The page is here: https://astroconda.readthedocs.io/en/latest/getting_started.html . You may follow the install instructions on Zhihu: https://zhuanlan.zhihu.com/p/545324660 .
 
