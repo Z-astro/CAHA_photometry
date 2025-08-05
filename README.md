@@ -38,6 +38,7 @@ The result folder is `CAHA/lightcurves`. The daily handling results are here. Th
 Corresponding folder: `ans-ztf_cali/`. The pipeline is `cali_targets.sh`. Usually we don't have to update once for all. Mr.Hu will tell you some targets are required to be updated. In Yao's version, you must divide the objects into several parts, a group with all ZTF-bands available, a group with only zg&zr bands available...... In this version, the script enters every source's directory to execute the mission, so you just need to give a total objlist in the shell script. If there is no demand, this section will be updated every 6 months.
 
 ASAS-SN lightcurve download: https://asas-sn.osu.edu/
+
 ZTF lightcurve download: https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-scan?mission=irsa&submit=Select&projshort=ZTF
 
 **Caution! DON'T USE SKY-PATROL API KEY TO DOWNLOAD ASAS-SN DATA! Just download it from the website.**
