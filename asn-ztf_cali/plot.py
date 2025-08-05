@@ -1,9 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os
 import sys
-import glob
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
