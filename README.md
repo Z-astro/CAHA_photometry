@@ -45,7 +45,7 @@ ZTF lightcurve download: https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-scan?mi
 
 Tools: PyCALI. https://pycali.readthedocs.io/en/latest/ . Hao Zhang said he still didn't know why this package is so magic. Ask Yan-Rong Li when you meet bugs during the installation.
 
-Please correct the file name to the form like: '{objname}_asas.csv' and '{objname}_zg/zr/zi.csv'. Data file is located in: /mnt/WDsata/asn-ztf/obj _{name}/
+Please correct the file name to the form like: '{objname}asas.csv' and '{objname}zg/zr/zi.csv'. Data file is located in: /mnt/WDsata/asn-ztf/obj _{name}/
 
 
 
